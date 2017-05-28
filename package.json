@@ -3,9 +3,9 @@
   "version": "0.1.0",
   "description": "RESTful API for Oracle Database for JARVIS project",
   "private": true,
-  "main": "app.js",
+  "main": "jarvis-oracledb-restful.js",
   "scripts": {
-    "start": "node app.js"
+    "start": "node jarvis-oracledb-restful.js"
   },
   "author": "Jongmin Kim <jmkim@pukyong.ac.kr>",
   "license": "MIT",

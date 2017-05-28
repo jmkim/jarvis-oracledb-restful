@@ -4,10 +4,10 @@ var express = require('express');
 var bodyParser = require('body-parser');
 var oracledb = require('oracledb');
 
-var logger = require('./logger.js');
+var logger = require('./lib/logger.js');
 
-var appConfig = require('./appconfig.json');
-var dbConfig = require('./dbconfig.json'); // oracledb.getConnection() conAttrs
+var appConfig = require('./conf/appconfig.json');
+var dbConfig = require('./conf/dbconfig.json'); // oracledb.getConnection() conAttrs
 
 var app = express();
 
