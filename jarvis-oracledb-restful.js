@@ -47,7 +47,7 @@ app.get('/jarvis', function (req, res) {
             } else {
                 for (var i = 0, len = result.rows.length; i < len; ++i) {
                     try {
-                        result.rows[i] = JSON.parse(result.rows[i].VALUE); // Convert to JSON if VALUE is JSON object
+                        result.rows[i].VALUE = JSON.parse(result.rows[i].VALUE); // Convert to JSON if VALUE is JSON object
                     } catch (e) {
                     }
                 }
@@ -96,7 +96,7 @@ app.get('/jarvis/by_type/:TYPE', function (req, res) {
             } else {
                 for (var i = 0, len = result.rows.length; i < len; ++i) {
                     try {
-                        result.rows[i] = JSON.parse(result.rows[i].VALUE); // Convert to JSON if VALUE is JSON object
+                        result.rows[i].VALUE = JSON.parse(result.rows[i].VALUE); // Convert to JSON if VALUE is JSON object
                     } catch (e) {
                     }
                 }
@@ -145,7 +145,7 @@ app.get('/jarvis/by_id/:ID', function (req, res) {
             } else {
                 for (var i = 0, len = result.rows.length; i < len; ++i) {
                     try {
-                        result.rows[i] = JSON.parse(result.rows[i].VALUE); // Convert to JSON if VALUE is JSON object
+                        result.rows[i].VALUE = JSON.parse(result.rows[i].VALUE); // Convert to JSON if VALUE is JSON object
                     } catch (e) {
                     }
                 }
