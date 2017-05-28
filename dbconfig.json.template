@@ -1,0 +1,5 @@
+{
+  "user": "DB_USERNAME_HERE",
+  "password": "DB_PASSWORD_HERE",
+  "connectString": "DB_URL_HERE"
+}

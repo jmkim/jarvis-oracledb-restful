@@ -1,0 +1,25 @@
+{
+  "name": "jarvis-oracledb-restful",
+  "version": "0.1.0",
+  "description": "RESTful API for Oracle Database for JARVIS project",
+  "private": true,
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js"
+  },
+  "author": "Jongmin Kim <jmkim@pukyong.ac.kr>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kdzlvaids/jarvis-oracledb-restful.git"
+  },
+  "bugs": {
+    "url": "https://github.com/kdzlvaids/jarvis-oracledb-restful/issues"
+  },
+  "homepage": "https://github.com/kdzlvaids/jarvis-oracledb-restful#readme",
+  "dependencies": {
+    "body-parser": "^1.17.2",
+    "express": "^4.15.3",
+    "oracledb": "^1.13.1"
+  }
+}
