@@ -34,7 +34,7 @@ app.get('/jarvis', function (req, res) {
             return;
         }
 
-        connection.execute("SELECT * FROM JARVIS", {}, {
+        connection.execute("SELECT * FROM JARVIS ORDER BY ID DESC", {}, {
             outFormat: oracledb.OBJECT // Return the result as Object
         }, function (err, result) {
             if (err) {
@@ -82,7 +82,7 @@ app.get('/jarvis/by_type/:TYPE', function (req, res) {
             return;
         }
 
-        connection.execute("SELECT * FROM JARVIS WHERE TYPE = :TYPE", [req.params.TYPE], {
+        connection.execute("SELECT * FROM JARVIS WHERE TYPE = :TYPE ORDER BY ID DESC", [req.params.TYPE], {
             outFormat: oracledb.OBJECT // Return the result as Object
         }, function (err, result) {
             if (err || result.rows.length < 1) {
@@ -131,7 +131,7 @@ app.get('/jarvis/by_id/:ID', function (req, res) {
             return;
         }
 
-        connection.execute("SELECT * FROM JARVIS WHERE ID = :ID", [req.params.ID], {
+        connection.execute("SELECT * FROM JARVIS WHERE ID = :ID ORDER BY ID DESC", [req.params.ID], {
             outFormat: oracledb.OBJECT // Return the result as Object
         }, function (err, result) {
             if (err || result.rows.length < 1) {
